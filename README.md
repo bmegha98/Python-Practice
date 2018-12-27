@@ -14,3 +14,4 @@ Given a DNA strand, its transcribed RNA strand is formed by replacing each nucle
           * A --> U
  
  * You are given the year, and you have to write a function to check if the year is leap or not.
+ * You have to print a list of all possible coordinates given by (i,j,k) on a 3D grid where the sum of i+j+k is not equal to N.
