@@ -16,7 +16,8 @@ Given a DNA strand, its transcribed RNA strand is formed by replacing each nucle
  * You are given the year, and you have to write a function to check if the year is leap or not.
  * You have to print a list of all possible coordinates given by (i,j,k) on a 3D grid where the sum of i+j+k is not equal to N.
  * Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given scores.     Store them in a list and find the score of the runner-up.
-     # Input:
-The first line contains n. The second line contains an array A[] of n integers each separated by a space.
-     # Output:
+     *Input:
+* The first line contains n. The second line contains an array A[] of n integers each separated by a space.
+     *Output:
+* Print the runner-up score.
      
