@@ -34,4 +34,9 @@ pop: Pop the last element from the list.
 reverse: Reverse the list.
 ```
 Initialize your list and read in the value of n followed by n lines of commands where each command will be of the 7 types listed above. Iterate through each command in order and perform the corresponding operation on your list.
+* The first line contains the first name, and the second line contains the last name.Your task is to read them and print the following:
+```
+Hello firstname lastname! You just delved into python.
+```
+
      
