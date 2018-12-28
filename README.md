@@ -23,4 +23,15 @@ Given a DNA strand, its transcribed RNA strand is formed by replacing each nucle
  * Given the names and grades for each student in a Physics class of N students, store them in a nested list and print the name(s) of any student(s) having the second lowest grade. If there are multiple students with the same grade, order their names alphabetically and print each name on a new line.
  * You have a record of N students. Each record contains the student's name, and their percent marks in Maths, Physics and Chemistry. The marks can be floating values. The user enters some integer N followed by the names and marks for N students. You are required to save the record in a dictionary data type. The user then enters a student's name. Output the average percentage marks obtained by that student, correct to two decimal places.
  * Given a full name, your task is to capitalize the name appropriately.In a word only the first character is capitalized. Example 12abc when capitalized remains 12abc.
+ * Consider a list (list = []). You can perform the following commands:
+```
+insert i e: Insert integer e  at position i.
+print: Print the list.
+remove e: Delete the first occurrence of integer e .
+append e: Insert integer e at the end of the list.
+sort: Sort the list.
+pop: Pop the last element from the list.
+reverse: Reverse the list.
+```
+Initialize your list and read in the value of n followed by n lines of commands where each command will be of the 7 types listed above. Iterate through each command in order and perform the corresponding operation on your list.
      
