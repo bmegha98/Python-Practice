@@ -41,5 +41,7 @@ Hello firstname lastname! You just delved into python.
 * Read a given string, change the character at a given index and then print the modified string.
 * In this challenge, the user enters a string and a substring. You have to print the number of times that the substring occurs in the given string.
 * You are given a string S .Your task is to find out if the string S contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters.
+* You are given a partial code that is used for generating the HackerRank Logo of variable thickness. 
+Your task is to replace the blank (______) with rjust, ljust or center.
 
      
