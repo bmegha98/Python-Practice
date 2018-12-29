@@ -39,5 +39,6 @@ Initialize your list and read in the value of n followed by n lines of commands 
 Hello firstname lastname! You just delved into python.
 ```
 * Read a given string, change the character at a given index and then print the modified string.
+* In this challenge, the user enters a string and a substring. You have to print the number of times that the substring occurs in the given string.
 
      
