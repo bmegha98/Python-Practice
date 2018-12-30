@@ -43,5 +43,6 @@ Hello firstname lastname! You just delved into python.
 * You are given a string S .Your task is to find out if the string S contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters.
 * You are given a partial code that is used for generating the HackerRank Logo of variable thickness. 
 Your task is to replace the blank (______) with rjust, ljust or center.
+* You are given a string S and width w. Your task is to wrap the string into a paragraph of width w.
 
      
