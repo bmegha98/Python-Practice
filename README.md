@@ -50,5 +50,15 @@ Mat size must be N X M. ( N is an odd natural number, and M is 3 times N .)
 The design should have 'WELCOME' written in the center.
 The design pattern should only use |, . and - characters.
 ```
+* You are given an integer,N . Your task is to print an alphabet rangoli of size N. 
+Different sizes of alphabet rangoli are shown below:
+```
+#size 3
+----c----
+--c-b-c--
+c-b-a-b-c
+--c-b-c--
+----c----
+```
 
      
