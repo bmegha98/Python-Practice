@@ -1,0 +1,12 @@
+from itertools import combinations
+if __name__=='__main__':
+    string=input().split()
+    l=list(string[0])
+    l.sort()
+    r=''.join(l)
+    K=int(string[1])
+    pair=[]
+    for i in range(1,K+1):
+        pair.extend(list(combinations(r,i)))
+    for ch in pair:
+        print(''.join(ch))
