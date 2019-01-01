@@ -3,8 +3,8 @@ if __name__=='__main__':
     N = int(input()); a = input().split(); K = int(input())
     c = list(combinations(a,K))
     '''
-    x=filter(lambda c: 'a' in c,C)
-    print(len(list(x))/len(C))
+    x=list(filter(lambda c: 'a' in c,C))
+    print(len(x)/len(C))
     '''
     result = [1 for i in range(len(c)) if 'a' in c[i]]
     print(sum(result)/len(c))
