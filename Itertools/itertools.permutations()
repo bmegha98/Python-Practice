@@ -1,0 +1,10 @@
+from itertools import permutations
+if __name__=='__main__':
+    string=input().split()
+    l=list(string[0])
+    l.sort()
+    r=''.join(l)
+    k=int(string[1])
+    pair=list(permutations(r,k))
+    for ch in pair:
+        print(''.join(ch))
