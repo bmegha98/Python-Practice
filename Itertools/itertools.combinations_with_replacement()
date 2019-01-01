@@ -1,0 +1,11 @@
+from itertools import combinations_with_replacement
+if __name__=='__main__':
+    string=input().split()
+    l=list(string[0])
+    l.sort()
+    r=''.join(l)
+    K=int(string[1])
+    pair=list(combinations_with_replacement(r,K))
+    for ch in pair:
+        print(''.join(ch))
+    
