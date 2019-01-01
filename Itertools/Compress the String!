@@ -1,0 +1,5 @@
+from itertools import groupby
+if __name__=='__main__':
+    string=input()
+    l=list((len(list(g)),int(k)) for k,g in groupby(string))
+    print(' '.join(str(ch) for ch in l))
