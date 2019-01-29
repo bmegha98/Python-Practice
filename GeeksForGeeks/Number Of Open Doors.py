@@ -29,6 +29,9 @@ if __name__=='__main__':
                 j+=i
         print(doors[1:].count(1))
 '''
+'''
+Every door is visited by its factors and door is open if number of its factors are odd. Perfect square number has Odd number of factors.
+'''
 import math
 if __name__=='__main__':
     T=int(input())
