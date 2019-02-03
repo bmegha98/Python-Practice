@@ -3,6 +3,12 @@ Given an array A of size N which consists of positive integers. The task is to m
 such that every chosen array element has exactly 3 divisiors. If no such number can be formed then print -1.
 '''
 from math import sqrt
+from itertools import permutations
+def largest(l): 
+    lst = [] 
+    for i in permutations(l, len(l)): 
+        lst.append("".join(map(str,i)))  
+    return max(lst) 
 def isPrime(n): 
     if (n <= 1): 
         return False
@@ -38,6 +44,5 @@ if __name__=='__main__':
         if len(l)==0:
             print('-1')
         else:
-            l.sort(reverse=True)
-            print(''.join(str(x) for x in l))
+            print(largest(l))
                 
