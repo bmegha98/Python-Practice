@@ -39,7 +39,7 @@ def CreateIntermediateFiles(filename,file1,file2):
         except EOFError:flag=False
         lst2.sort(key=RecordKey)
         for ch in lst2:pickle.dump(ch,f2)      
-        
+       
     f.close(),f1.close(),f2.close()
     end=time.time()
     print('Time taken to create intermediate files : ',end-start,'sec.')
