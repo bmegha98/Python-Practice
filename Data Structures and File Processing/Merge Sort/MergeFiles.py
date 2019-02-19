@@ -82,6 +82,7 @@ def MergeFiles(filename,file1,file2):
         os.remove(file1),os.remove(file2)
         os.rename('f3.bin',file1),os.rename('f4.bin',file2)
         C.blocksize*=2
+        
     end=time.time()
     print('Time taken to maerge files : ',end-start,'sec.')
         
