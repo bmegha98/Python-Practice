@@ -56,8 +56,7 @@ def RangeRecords(Filename,StartRec,EndRec):
         f.close()
     except:
         print('ERROR!!! File is empty.')
-        
-    
+          
 if __name__=='__main__':
     filename=input('Enter file to be sorted : ')
     print('Enter intermediate file names :')
