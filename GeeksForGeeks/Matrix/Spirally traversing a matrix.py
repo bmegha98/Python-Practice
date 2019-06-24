@@ -7,7 +7,7 @@ if __name__ == '__main__':
     for _ in range(T):
         size = list(map(int,input().split()))
         m , n = size[0],size[1]
-    
+        arr = list(input().split())
         matrix = [arr[i:i+n] for i in range(0,n*m,n)]
         
         i = 0
