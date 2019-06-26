@@ -1,4 +1,4 @@
-'''
+/*
 Given a matrix of size N X N, where N is odd. The task is to find the maximum sum out of all the triangles formed in the matrix as shown below:
 Matrix:
 1 2 3
@@ -24,7 +24,7 @@ Right Triangle:
    9
 
 Sum of all triangles up, left , low and right are as 11, 17, 29, 23 respectively. Maximum of all these is 29.
-'''
+*/
 
 #include<iostream>
 using namespace std;
@@ -32,17 +32,17 @@ using namespace std;
 int Upper(int A[][1000],int N)
 {
     int sum = 0;
-    for(int i =0;i<N;i++)
+    int mid = N/2;
+    sum+=A[mid][mid];
+    for(int i =0;i<mid;i++)
     {
-        for(int j=0;j<N;j++)
+        for(int j=0;j<N-i;j++)
         {
            if(i <= j)
            sum+=A[i][j];
-           if(i == int(N/2) && j == int(N/2))
-               return sum;
-           
         }
 	 }
+	 return sum;
 }
 
 int Lower(int A[][1000],int N)
@@ -50,9 +50,9 @@ int Lower(int A[][1000],int N)
     int sum = 0;
     int mid = N/2;
     sum+=A[mid][mid];
-    for(int i =mid+1;i<N;i++)
+    for(int i = N-1;i>mid;i--)
     {
-        for(int j=0;j<N;j++)
+        for(int j=N-i-1;j<N;j++)
         {
            if(i >= j)
            sum+=A[i][j];
@@ -66,7 +66,8 @@ int Left(int A[][1000],int N)
     int sum = 0;
     int mid = N/2;
     sum+=A[mid][mid];
-    for(int i =0;i<N;i++)
+    sum+=A[N-1][0];
+    for(int i =0;i<N-1;i++)
     {
         for(int j =0;j<mid;j++)
         {
@@ -84,7 +85,8 @@ int Right(int A[][1000],int N)
     int sum=0;
     int mid = N/2;
     sum+=A[mid][mid];
-    for(int i =0;i<N;i++)
+    sum+=A[0][N-1];
+    for(int i = 1;i<N;i++)
     {
         for(int j = N-1;j>mid;j--)
         {
@@ -121,12 +123,13 @@ int main()
 	    }
 	    
 	    Sum[0] = Upper(A,N);
-	   
+	    //cout<<Sum[0]<<endl;
 	    Sum[1] = Lower(A,N);
-	    
+	    //cout<<Sum[1]<<endl;
 	    Sum[2] = Left(A,N);
-	    
+	    //cout<<Sum[2]<<endl;
 	    Sum[3] = Right(A,N);
+	    //cout<<Sum[3]<<endl;
 	    
 	    
 	    cout<<Maximum(Sum)<<endl;
