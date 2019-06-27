@@ -67,9 +67,9 @@ int Left(int A[][1000],int N)
     int mid = N/2;
     sum+=A[mid][mid];
     sum+=A[N-1][0];
-    for(int i =0;i<N-1;i++)
+    for(int col = 0; col         
     {
-        for(int j =0;j<mid;j++)
+        for(int row =0;row < N;row
         {
             if(i>=j)
             sum+=A[i][j];
