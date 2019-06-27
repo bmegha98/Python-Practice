@@ -66,13 +66,12 @@ int Left(int A[][1000],int N)
     int sum = 0;
     int mid = N/2;
     sum+=A[mid][mid];
-    sum+=A[N-1][0];
-    for(int col = 0; col         
+    for(int col = 0; col < mid;col++)        
     {
-        for(int row =0;row < N;row
+        for(int row = col ; row < N-col ; row++)
         {
-            if(i>=j)
-            sum+=A[i][j];
+            if( col <= row)
+            sum+=A[row][col];
             
         }
         
@@ -85,13 +84,13 @@ int Right(int A[][1000],int N)
     int sum=0;
     int mid = N/2;
     sum+=A[mid][mid];
-    sum+=A[0][N-1];
-    for(int i = 1;i<N;i++)
+  
+    for(int col = N-1 ;col > mid;col--)
     {
-        for(int j = N-1;j>mid;j--)
+        for(int row = col;row >= N-col-1 ;row--)
         {
-            if(i<=j)
-            sum+=A[i][j];
+            if(row<=col)
+            sum+=A[row][col];
         }
     }
     return sum;
