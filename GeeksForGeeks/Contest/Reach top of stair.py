@@ -4,12 +4,12 @@ adding only given 3 integers 1, 2 and 3.
 
 To reach 4th stair , count ways to reach 3rd stair ,2nd stair and 1st stair.
 f(n) = f(n-3)+f(n-2)+f(n-1)
-E.g : n = 2       n = 3                           n = 4
-     1->1         1->1->1                       ==> (n=3)+(n=2)+(n=1)  = 4 + 2 + 1 = 7
-     2            2->1
+E.g : n = 1   n = 2              n = 3                   n = 4
+        1      1->1             1->1->1               ==> (n=3)+(n=2)+(n=1)  = 4 + 2 + 1 = 7
+                 2 (n = 0)        2->1
      
-                  1->2 ( n = 1)
-                    3   ( n= 0)
+                                   1->2 ( n = 1)
+                                    3   ( n= 0)
 
 '''
 
