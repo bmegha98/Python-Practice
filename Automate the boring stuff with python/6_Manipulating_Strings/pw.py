@@ -15,6 +15,7 @@ account = sys.argv[1]  # first command line arg is the account name
 '''
 
 if __name__ == '__main__':
+    print('********************PASSWORD LOCKER***********************')
     account = ''
     while account == '':
         account = input('Enter account name :  ')    
