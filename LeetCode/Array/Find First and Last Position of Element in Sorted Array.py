@@ -5,6 +5,25 @@ Your algorithm's runtime complexity must be in the order of O(log n).
 
 If the target is not found in the array, return [-1, -1].
 '''
+'''
+# Using another approach:
+def First(A,l,h,key):
+    while l<=h :
+        m = (l+h)//2
+        if A[m] == key and (m == 0 or A[m-1] < key):return m
+        elif A[m] < key : l = m + 1
+        else : h = m - 1
+    return -1
+
+def Last (A, l , h , key):
+    while l<=h :
+        m = (l+h)//2
+        if A[m] == key and (m == len(A)-1 or A[m+1] > key):return m
+        elif A[m] <= key : l = m + 1
+        else : h = m - 1
+    return -1
+
+'''
 class Solution(object):
     def searchRange(self, nums, target):
         """
